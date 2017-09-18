@@ -2,8 +2,10 @@ while True:
     number=input("How much do you want to get trolled? input a integer")
     try:
         number=int(number)
-        if number<=10:
+        print(number)
+        if number<=0:
             raise ValueError
+        break
     except ValueError:
         pass
 for i in range(number):
